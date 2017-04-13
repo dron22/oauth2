@@ -96,7 +96,7 @@ func (c *tokenSource) Token() (*oauth2.Token, error) {
 	}
 	t := &oauth2.Token{
 		AccessToken:  tk.AccessToken,
-		TokenType:    tk.TokenType,
+		TokenType:    "Bearer",
 		RefreshToken: tk.RefreshToken,
 		Expiry:       tk.Expiry,
 	}
